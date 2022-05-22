@@ -1,76 +1,10 @@
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-<head>
-    <title>Redvise Ltd.</title>
+@extends('_layouts.master')
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Open-Graph -->
-    <meta property="og:title" content="Redvise" />
-    <meta property="og:description" content="IT consulting, development and embedded systems" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://redvi.se/" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:image" content="http://redvi.se/assets/img/logo_og.png" />
-    <meta property="og:image:secure_url" content="https://redvi.se/assets/img/logo_og.png" />
-    <meta property="og:image:alt" content="Redvise Logo" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image" content="http://redvi.se/assets/img/logo_og.jpg" />
-    <meta property="og:image:secure_url" content="https://redvi.se/assets/img/logo_og.jpg" />
-    <meta property="og:image:alt" content="Redvise Logo" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <!-- Fonts -->
-    <style>
-    @font-face {
-        font-family: 'Conthrax';
-        font-display: swap;
-        src: url(fonts/Typodermic - Conthrax SemiBold - Regular.woff2) format('woff2');
-        src: url(fonts/Typodermic - Conthrax SemiBold - Regular.woff) format('woff');
-    }
-    @font-face {
-        font-family: 'Typold';
-        font-display: swap;
-        src: url(fonts/The Northern Block - Typold Book 500 - Regular.woff2) format('woff2');
-        src: url(fonts/The Northern Block - Typold Book 500 - Regular.woff) format('woff');
-    }
-    .conthrax {
-        font-family: Conthrax, sans-serif;
-    }
-    .typold {
-        font-family: Typold, serif;
-    }
-    </style>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/build/css/custom.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#ff0000">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-
+@section('body')
     <!-- Navbar -->
     <nav class="navbar px-5">
         <a class="navbar-brand" href="/">
-            <img src="/assets/img/picto.svg" alt="Redvise Picto">
+            <img src="{{ url('assets/img/picto.svg') }}" alt="Redvise Picto">
         </a>
     </nav>
     <!-- /Navbar -->
@@ -78,7 +12,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-8 offset-md-2">
-                <img src="/assets/img/reseller.svg" class="img-fluid" alt="MikroTik Reseller Logo">
+                <img src="{{ url('assets/img/reseller.svg') }}" class="img-fluid" alt="MikroTik Reseller Logo">
             </div>
         </div>
 
@@ -143,5 +77,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@endsection
