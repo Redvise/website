@@ -26,35 +26,6 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        <!-- Fonts -->
-        <style>
-            @font-face {
-                font-family: 'Conthrax';
-                font-display: swap;
-                src: url(fonts/Typodermic - Conthrax SemiBold - Regular.woff2) format('woff2');
-                src: url(fonts/Typodermic - Conthrax SemiBold - Regular.woff) format('woff');
-            }
-            @font-face {
-                font-family: 'Typold';
-                font-display: swap;
-                src: url(fonts/The Northern Block - Typold Book 500 - Regular.woff2) format('woff2');
-                src: url(fonts/The Northern Block - Typold Book 500 - Regular.woff) format('woff');
-            }
-            .conthrax {
-                font-family: Conthrax, sans-serif;
-            }
-            .typold {
-                font-family: Typold, serif;
-            }
-        </style>
-        @stack('styles')
-
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ mix('css/custom.css', 'assets/build') }}">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="{{ url('assets/favicons/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ url('assets/favicons/favicon-32x32.png') }}">
@@ -65,8 +36,18 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-config" content="{{ url('assets/favicons/browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ mix('css/custom.css', 'assets/build') }}">
+        @stack('styles')
     </head>
     <body>
         @yield('body')
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        @stack('scripts')
     </body>
 </html>

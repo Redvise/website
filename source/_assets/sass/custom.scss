@@ -1,3 +1,26 @@
+
+@font-face {
+    font-family: 'Conthrax';
+    font-display: swap;
+    src: url('../../fonts/Typodermic - Conthrax SemiBold - Regular.woff2') format('woff2');
+    src: url('../../fonts/Typodermic - Conthrax SemiBold - Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Typold';
+    font-display: swap;
+    src: url('../../fonts/The Northern Block - Typold Book 500 - Regular.woff2') format('woff2');
+    src: url('../../fonts/The Northern Block - Typold Book 500 - Regular.woff') format('woff');
+}
+
+.conthrax {
+    font-family: Conthrax, sans-serif;
+}
+
+.typold {
+    font-family: Typold, serif;
+}
+
 .navbar-brand img, .navbar-nav img {
     height: 2rem;
 }
