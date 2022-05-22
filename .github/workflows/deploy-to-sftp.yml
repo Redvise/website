@@ -1,0 +1,40 @@
+name: Deploy to SFTP
+
+on:
+  push:
+    branches: master
+
+env:
+  BUILD_SRC: ${{ secrets.BUILD_SRC }}
+  SERVER_HOST: ${{ secrets.SERVER_HOST }}
+  SERVER_USER: ${{ secrets.SERVER_USER }}
+  SERVER_PASS: ${{ secrets.SERVER_PASS }}
+  SERVER_PATH: ${{ secrets.SERVER_PATH }}
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Set env
+        run: sudo update-alternatives --set php /usr/bin/php7.4
+
+      - uses: actions/checkout@v3
+
+      - name: Install composer dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest --no-dev --optimize-autoloader
+
+      - name: Install npm dependencies
+        run: npm i
+
+      - name: Build website
+        run: npm run production
+
+      - name: Deploy
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          localDir: ${{ secrets.BUILD_SRC }}
+          host: ${{ secrets.SERVER_HOST }}
+          user: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASS }}
+          remoteDir: ${{ secrets.SERVER_PATH }}
+          options: "--delete --asci"
