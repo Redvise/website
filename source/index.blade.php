@@ -36,7 +36,7 @@
                         71–75 Shelton Street<br>
                         Covent Garden<br>
                         London, WC2H 9JQ<br>
-                        United-Kingdom<br>
+                        United-Kingdom 🇬🇧<br>
                         <a href="https://goo.gl/maps/Hwv43fr36PoM6iau9" target="_blank">Map</a>
                     </p>
                 </div>
@@ -54,7 +54,7 @@
                     <p class="typold" style="line-height: 1.3rem">
                         39 rue de la Gare de Reuilly<br>
                         75012, Paris<br>
-                        France<br>
+                        France 🇫🇷<br>
                         <a href="https://goo.gl/maps/Juo5nzvpv5Rzenim7" target="_blank">Plan</a>
                     </p>
                 </div>
@@ -64,7 +64,7 @@
                         À Olympic Palace Hotel<br>
                         15 avenue de l'amitié<br>
                         Centre-Ville, Brazzaville<br>
-                        République du Congo<br>
+                        République du Congo 🇨🇬<br>
                         <a href="https://goo.gl/maps/zgWSSG39FSf3w1kJ7" target="_blank">Plan</a>
                     </p>
                 </div>
