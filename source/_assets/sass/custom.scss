@@ -22,5 +22,12 @@
 }
 
 .navbar-brand img, .navbar-nav img {
-    height: 2rem;
+    height: 1.5rem;
+}
+
+// md
+@media (min-width: 768px) {
+    .navbar-brand img, .navbar-nav img {
+        height: 2rem;
+    }
 }
