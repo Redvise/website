@@ -2,7 +2,7 @@
 
 @section('body')
     <!-- Navbar -->
-    <nav class="navbar px-5">
+    <nav class="navbar px-md-5">
         <a class="navbar-brand" href="#">&nbsp;</a>
 
         <div class="navbar-nav">
