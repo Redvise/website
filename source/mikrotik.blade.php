@@ -96,8 +96,10 @@ labels:
                         </div>
                         <h5 class="card-title">{{ $name }}</h5>
                         <p class="card-text">{{ $meta['desc'] }}</p>
-                        <p class="card-text small"><a href="{{ $meta['url'] }}" target="_blank">See more…</a></p>
                     </div>
+                    <footer class="px-3 py-2 text-right">
+                        <small><a href="{{ $meta['url'] }}" target="_blank">See more…</a></small>
+                    </footer>
                 </div>
             </div>
             @endforeach
