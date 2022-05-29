@@ -1,62 +1,3 @@
----
-devices:
-  hAP mini:
-    img: https://i.mt.lv/cdn/rb_images/1283_m.png
-    url: https://mikrotik.com/product/RB931-2nD
-    desc: Tiny size home 2.4Ghz AP with three LAN ports.
-    labels:
-      - 2.4GHz
-      - 100Mbps
-  hAP lite:
-    img: https://i.mt.lv/cdn/rb_images/1007_m.png
-    url: https://mikrotik.com/product/RB941-2nD
-    desc: Low cost home wireless AP with dual chain 2.4GHz wireless, powered by USB.
-    labels:
-      - 2.4GHz
-      - 100Mbps
-  hAP lite TC:
-    img: https://i.mt.lv/cdn/rb_images/1766_m.png
-    url: https://mikrotik.com/product/RB931-2nD-TC
-    desc: Small home AP with four ethernet ports and a colorful enclosure.
-    labels:
-      - 2.4GHz
-      - 100Mbps
-  hAP:
-    img: https://i.mt.lv/cdn/rb_images/1059_m.png
-    url: https://mikrotik.com/product/RB951Ui-2nD
-    desc: 2.4GHz AP, Five Ethernet ports, PoE-out on port 5, USB for 3G/4G support.
-    labels:
-      - 2.4GHz
-      - PoE-in/out
-      - 100Mbps
-  hAP ac lite:
-    img: https://i.mt.lv/cdn/rb_images/1413_m.png
-    url: https://mikrotik.com/product/RB952Ui-5ac2nD
-    desc: Dual-Concurrent 2.4/5GHz AP, 802.11ac, Five Ethernet ports, PoE-out on port 5, USB for 3G/4G support.
-    labels:
-      - 2.4/5GHz
-      - PoE-in/out
-      - 100Mbps
-  hAP ac lite TC:
-    img: https://i.mt.lv/cdn/rb_images/1230_m.png
-    url: https://mikrotik.com/product/RB952Ui-5ac2nD-TC
-    desc: Dual-Concurrent 2.4/5GHz AP, 802.11ac, Five Ethernet ports, PoE-out on port 5, USB for 3G/4G support, universal tower case.
-    labels:
-      - 2.4/5GHz
-      - PoE-in/out
-      - 100Mbps
-
-labels:
-  2.4GHz: light
-  5GHz: primary
-  2.4/5GHz: success
-  PoE-in: warning
-  PoE-out: warning
-  PoE-in/out: warning
-  100Mbps: secondary
-  1Gbps: info
----
-
 @extends('_layouts.master')
 
 @section('body')
@@ -84,7 +25,7 @@ labels:
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
-            @foreach ($page->devices as $name => $meta)
+            @foreach ($page->mikrotik as $name => $meta)
             <div class="col mb-3">
                 <div class="card h-100 mt-product">
                     <img src="{{ $meta['img'] }}" class="card-img-top border-bottom" alt="{{ $name }}">
@@ -95,7 +36,7 @@ labels:
                             @endforeach
                         </div>
                         <h5 class="card-title">{{ $name }}</h5>
-                        <p class="card-text">{{ $meta['desc'] }}</p>
+                        <p class="card-text">{!! $meta['title'] !!}</p>
                     </div>
                     <footer class="px-3 py-2 text-right">
                         <small><a href="{{ $meta['url'] }}" target="_blank">See more…</a></small>
