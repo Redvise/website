@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-8 offset-md-2">
-                <img src="{{ url('assets/img/reseller.svg') }}" class="img-fluid" alt="MikroTik Reseller Logo">
+                <img src="{{ url('assets/img/mikrotik-reseller.svg') }}" class="img-fluid" alt="MikroTik Reseller Logo">
             </div>
         </div>
 

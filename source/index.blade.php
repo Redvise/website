@@ -7,7 +7,7 @@
 
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="{{ url('mikrotik') }}">
-                <img src="{{ url('assets/img/reseller.svg') }}" alt="MikroTik Reseller logo">
+                <img src="{{ url('assets/img/mikrotik-reseller.svg') }}" alt="MikroTik Reseller logo">
             </a>
         </div>
     </nav>
