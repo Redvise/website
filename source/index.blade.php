@@ -6,9 +6,9 @@
         <a class="navbar-brand" href="#">&nbsp;</a>
 
         <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{{ url('mikrotik') }}">
+            {{-- <a class="nav-item nav-link" href="{{ url('mikrotik') }}">
                 <img src="{{ url('assets/img/mikrotik-reseller.svg') }}" alt="MikroTik Reseller logo">
-            </a>
+            </a> --}}
         </div>
     </nav>
     <!-- /Navbar -->
@@ -27,6 +27,14 @@
                         <h2 class="typold d-sm-none" style="font-size: 2.45vw; color: var(--gray-dark);">IT consulting, development and embedded systems</h2>
                         <h2 class="typold d-none d-sm-block" style="font-size: 83%; color: var(--gray-dark);">IT consulting, development and embedded systems</h2>
                     </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 pt-3 pb-5 justify-content-around align-items-center">
+                <div class="col-auto">
+                    <a class="nav-item nav-link" href="{{ url('mikrotik') }}">
+                        <img src="{{ url('assets/img/mikrotik-reseller.svg') }}" alt="MikroTik Reseller logo" style="height:3rem">
+                    </a>
                 </div>
             </div>
 
