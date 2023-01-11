@@ -36,6 +36,9 @@
                         <img src="{{ url('assets/img/mikrotik-reseller.svg') }}" alt="MikroTik Reseller logo" style="height:3rem">
                     </a>
                 </div>
+                <div class="col-auto">
+                    <img src="{{ url('assets/img/3cx-partner.jpg') }}" alt="3CX Partner logo" style="height:5.5rem">
+                </div>
             </div>
 
             <div class="row mb-3">
