@@ -27,7 +27,9 @@ jobs:
         run: npm i
 
       - name: Build website
-        run: npm run production
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm run production
 
       - name: Deploy
         uses: sebastianpopp/ftp-action@releases/v2
