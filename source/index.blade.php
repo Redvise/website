@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <div class="col-auto">
-                    <img src="{{ url('assets/img/3cx-partner.jpg') }}" alt="3CX Partner logo" style="height:5.5rem">
+                    <img src="{{ url('assets/img/3cx-partner-bronze.png') }}" alt="3CX Bronze Partner logo" style="height:5.5rem">
                 </div>
             </div>
 
