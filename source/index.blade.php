@@ -39,6 +39,9 @@
                 <div class="col-auto">
                     <img src="{{ url('assets/img/3cx-partner-bronze.png') }}" alt="3CX Bronze Partner logo" style="height:5.5rem">
                 </div>
+                <div class="col-auto">
+                    <img src="{{ url('assets/img/voiptools.png') }}" alt="VoIP Tools logo" style="height:5.5rem">
+                </div>
             </div>
 
             <div class="row mb-3">
